@@ -1,0 +1,40 @@
+{
+  "id": "friends-links",
+  "name": "友链管理",
+  "version": "1.0.0",
+  "icon": "🔗",
+  "description": "管理博客友链页面",
+  "longDescription": "为博客添加友链页面，支持申请、审核、管理友链。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "category": "page",
+  "tags": ["friends", "links", "page"],
+  "verified": false,
+  "source": "plugins/page/friends-links",
+  "formats": {
+    "page": {
+      "route": "/friends",
+      "title": "友链",
+      "nav": { "location": "header", "label": "友链", "order": 8 }
+    },
+    "webcomponent": {
+      "entry": "webcomponent/index.js",
+      "element": "blog-friends-links"
+    },
+    "adminPage": {
+      "entry": "admin/index.js",
+      "element": "blog-friends-links-admin",
+      "nav": { "label": "友链管理", "icon": "🔗", "section": "content" }
+    }
+  },
+  "slots": [],
+  "allowedRoutes": ["/friends"],
+  "dependencies": { "required": [], "recommended": [] },
+  "config": {
+    "schema": {
+      "title": { "type": "text", "label": "页面标题", "default": "友链" },
+      "description": { "type": "text", "label": "页面描述", "default": "交换友链请留言~" }
+    }
+  },
+  "permissions": { "publicRead": true, "publicWrite": true, "adminWrite": true },
+  "themeCompatibility": { "universal": true }
+}

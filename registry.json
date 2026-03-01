@@ -868,6 +868,53 @@
       "themeCompatibility": {
         "universal": true
       }
+    },
+    {
+      "id": "friends-links",
+      "name": "友链管理",
+      "version": "1.0.0",
+      "icon": "🔗",
+      "description": "管理博客友链页面",
+      "author": {
+        "name": "Blog Plugins Team",
+        "url": "https://github.com/Jason-purse/blog-plugins"
+      },
+      "category": "page",
+      "tags": [
+        "friends",
+        "links"
+      ],
+      "verified": false,
+      "source": "plugins/page/friends-links",
+      "formats": {
+        "page": {
+          "route": "/friends",
+          "title": "友链"
+        },
+        "webcomponent": {
+          "entry": "webcomponent/index.js",
+          "element": "blog-friends-links"
+        },
+        "adminPage": {
+          "entry": "admin/index.js",
+          "element": "blog-friends-links-admin",
+          "nav": {
+            "label": "友链管理",
+            "icon": "🔗",
+            "section": "content"
+          }
+        }
+      },
+      "allowedRoutes": [
+        "/friends"
+      ],
+      "dependencies": {
+        "required": [],
+        "recommended": []
+      },
+      "themeCompatibility": {
+        "universal": true
+      }
     }
   ],
   "bundles": [
