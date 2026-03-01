@@ -26,7 +26,7 @@
       btn.setAttribute('aria-label', '切换深色/浅色模式');
       btn.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
       
-      // Button styles
+      // Button styles + 基础 dark mode CSS 变量（确保即使主题不支持也能生效）
       const style = document.createElement('style');
       style.textContent = `
         .blog-dark-mode-btn {
@@ -55,6 +55,22 @@
           background: #1e293b;
           box-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
+        /* 基础 dark mode 变量覆盖，主题 CSS 可在此基础上扩展 */
+        [data-theme="dark"] {
+          color-scheme: dark;
+          background-color: #0f172a;
+          color: #e2e8f0;
+        }
+        [data-theme="dark"] body {
+          background-color: #0f172a;
+          color: #e2e8f0;
+        }
+        [data-theme="dark"] a { color: #7dd3fc; }
+        [data-theme="dark"] code { background: #1e293b; color: #7dd3fc; }
+        [data-theme="dark"] pre { background: #020617; }
+        [data-theme="dark"] blockquote { border-color: #334155; color: #94a3b8; }
+        [data-theme="dark"] h1,[data-theme="dark"] h2,[data-theme="dark"] h3 { color: #f1f5f9; }
+        [data-theme="dark"] h2 { border-color: #334155; }
       `;
       document.head.appendChild(style);
       document.body.appendChild(btn);

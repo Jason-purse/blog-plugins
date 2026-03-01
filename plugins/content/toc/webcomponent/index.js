@@ -7,20 +7,16 @@
       const maxDepth = cfg.maxDepth || 'h3';
       const position = cfg.position || 'right';
       
-      // Determine which headings to include
-      const selectors = [];
-      if (maxDepth === 'h2') selectors.push('h2');
-      else if (maxDepth === 'h3') selectors.push('h2', 'h3');
-      else selectors.push('h2', 'h3', 'h4');
-      
-      // Find all headings in the article
+      // 按文档顺序收集标题（不能按 selector 分批，否则所有 h2 排在 h3 前面）
+      const selectorStr = maxDepth === 'h2' ? 'h2'
+        : maxDepth === 'h3' ? 'h2,h3' : 'h2,h3,h4';
+
       const headings = [];
-      selectors.forEach(sel => {
-        document.querySelectorAll(sel).forEach((el, idx) => {
-          const id = el.id || `heading-${sel}-${idx}`;
-          if (!el.id) el.id = id;
-          headings.push({ id, text: el.innerText, level: parseInt(sel.charAt(1)) });
-        });
+      document.querySelectorAll(selectorStr).forEach((el, idx) => {
+        const level = parseInt(el.tagName.charAt(1));
+        const id = el.id || `heading-${level}-${idx}`;
+        if (!el.id) el.id = id;
+        headings.push({ id, text: el.innerText.trim(), level });
       });
       
       if (headings.length === 0) return;
