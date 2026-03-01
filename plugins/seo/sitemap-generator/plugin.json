@@ -1,0 +1,22 @@
+{
+  "id": "sitemap-generator",
+  "name": "Sitemap 生成器",
+  "version": "1.0.0",
+  "icon": "🗺️",
+  "description": "自动生成 XML Sitemap",
+  "longDescription": "为博客生成符合 SEO 标准的 XML Sitemap，支持文章、页面分类。",
+  "author": { "name": "Blog Plugins Team", "url": "https://github.com/Jason-purse/blog-plugins" },
+  "category": "seo",
+  "tags": ["seo", "sitemap"],
+  "verified": false,
+  "source": "plugins/seo/sitemap-generator",
+  "formats": {
+    "api": {
+      "routes": ["/sitemap.xml"]
+    }
+  },
+  "slots": [],
+  "allowedRoutes": [],
+  "dependencies": { "required": [], "recommended": [] },
+  "themeCompatibility": { "universal": true }
+}
