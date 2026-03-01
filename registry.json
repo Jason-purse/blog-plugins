@@ -1,52 +1,94 @@
 {
-  "version": "1.0",
+  "version": "2.0",
+  "updatedAt": "2026-03-01",
   "maintainers": [
     "Jason-purse"
   ],
-  "updatedAt": "2026-03-01",
-  "themes": [
-    {
-      "id": "editorial",
-      "name": "Editorial",
-      "type": "theme",
-      "verified": true,
-      "version": "1.0.0",
-      "source": "themes/editorial",
-      "description": "文艺出版风 — Playfair Display + 奶油白",
-      "preview": "themes/editorial/preview.png"
-    },
-    {
-      "id": "minimal",
-      "name": "Minimal",
-      "type": "theme",
-      "verified": true,
-      "version": "1.0.0",
-      "source": "themes/minimal",
-      "description": "极简苹果风 — 无衬线 + 大留白",
-      "preview": "themes/minimal/preview.png"
-    },
-    {
-      "id": "tech",
-      "name": "Tech",
-      "type": "theme",
-      "verified": true,
-      "version": "1.0.0",
-      "source": "themes/tech",
-      "description": "极客终端风 — 暗色背景 + 绿色高亮",
-      "preview": "themes/tech/preview.png"
-    },
-    {
-      "id": "warm",
-      "name": "Warm",
-      "type": "theme",
-      "verified": true,
-      "version": "1.0.0",
-      "source": "themes/warm",
-      "description": "温馨咖啡馆 — 暖色系 + 圆角",
-      "preview": "themes/warm/preview.png"
-    }
-  ],
   "plugins": [
+    {
+      "id": "theme-editorial",
+      "name": "Editorial",
+      "category": "theme",
+      "tags": [
+        "serif",
+        "warm",
+        "editorial"
+      ],
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 512,
+      "source": "themes/editorial",
+      "description": "文艺出版风 — Playfair Display + 奶油白底色，适合长文阅读",
+      "preview": "themes/editorial/preview.png",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "theme-minimal",
+      "name": "Minimal",
+      "category": "theme",
+      "tags": [
+        "sans-serif",
+        "clean",
+        "minimal"
+      ],
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 389,
+      "source": "themes/minimal",
+      "description": "极简苹果风 — 无衬线字体 + 大留白，专注内容本身",
+      "preview": "themes/minimal/preview.png",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "theme-tech",
+      "name": "Tech",
+      "category": "theme",
+      "tags": [
+        "dark",
+        "monospace",
+        "hacker"
+      ],
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 276,
+      "source": "themes/tech",
+      "description": "极客终端风 — 暗色背景 + 绿色高亮，写给技术读者",
+      "preview": "themes/tech/preview.png",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
+    {
+      "id": "theme-warm",
+      "name": "Warm",
+      "category": "theme",
+      "tags": [
+        "warm",
+        "cafe",
+        "cozy"
+      ],
+      "verified": true,
+      "version": "1.0.0",
+      "author": "Jason-purse",
+      "downloads": 198,
+      "source": "themes/warm",
+      "description": "温馨咖啡馆 — 暖色系 + 圆角卡片，营造舒适阅读氛围",
+      "preview": "themes/warm/preview.png",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0
+      }
+    },
     {
       "id": "ai-summary",
       "name": "AI 文章摘要",
@@ -56,7 +98,6 @@
         "summary",
         "auto"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -77,7 +118,6 @@
         "navigation",
         "sidebar"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -98,7 +138,6 @@
         "highlight",
         "prism"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -119,7 +158,6 @@
         "time",
         "ux"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -140,13 +178,12 @@
         "scroll",
         "ux"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 312,
       "source": "plugins/reading-progress",
-      "description": "页面顶部显示文章阅读进度",
+      "description": "页面顶部显示文章阅读进度条",
       "revalidation": {
         "mode": "debounced",
         "debounceSeconds": 120
@@ -161,7 +198,6 @@
         "button",
         "ux"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -175,14 +211,13 @@
     },
     {
       "id": "dark-mode",
-      "name": "暗黑模式",
+      "name": "暗黑模式切换",
       "category": "ui",
       "tags": [
         "dark",
         "theme",
         "toggle"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -203,13 +238,12 @@
         "github",
         "discussion"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 178,
       "source": "plugins/giscus-comments",
-      "description": "基于 GitHub Discussions 的评论系统",
+      "description": "基于 GitHub Discussions 的评论系统，零服务器",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -224,7 +258,6 @@
         "twitter",
         "wechat"
       ],
-      "type": "plugin",
       "verified": false,
       "version": "0.9.0",
       "author": "community",
@@ -245,13 +278,12 @@
         "reaction",
         "engagement"
       ],
-      "type": "plugin",
       "verified": false,
       "version": "0.8.0",
       "author": "community",
       "downloads": 41,
       "source": "plugins/like-button",
-      "description": "文章一键点赞，数据存储于 GitHub",
+      "description": "文章一键点赞，计数存储于 GitHub Issues",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -266,7 +298,6 @@
         "counter",
         "stats"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -287,7 +318,6 @@
         "analytics",
         "insight"
       ],
-      "type": "plugin",
       "verified": false,
       "version": "0.7.0",
       "author": "community",
@@ -308,7 +338,6 @@
         "schema",
         "json-ld"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
@@ -329,13 +358,12 @@
         "seo",
         "crawl"
       ],
-      "type": "plugin",
       "verified": true,
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 76,
       "source": "plugins/sitemap-gen",
-      "description": "自动生成和更新 sitemap.xml",
+      "description": "自动生成和更新 sitemap.xml，加速搜索引擎抓取",
       "revalidation": {
         "mode": "debounced",
         "debounceSeconds": 300
