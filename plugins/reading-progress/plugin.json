@@ -1,0 +1,28 @@
+{
+  "id": "reading-progress",
+  "name": "阅读进度条",
+  "version": "1.0.0",
+  "type": "plugin",
+
+  "formats": {
+    "css": {
+      "entry": "css/index.css"
+    },
+    "webcomponent": {
+      "entry": "webcomponent/index.js",
+      "element": "blog-reading-progress"
+    }
+  },
+
+  "slots": ["before-content"],
+
+  "config": {
+    "color":  { "type": "string", "default": "var(--accent)" },
+    "height": { "type": "number", "default": 3 }
+  },
+
+  "checksums": {
+    "css/index.css":         "sha256:pending",
+    "webcomponent/index.js": "sha256:pending"
+  }
+}

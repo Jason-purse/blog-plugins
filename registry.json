@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "maintainers": ["Jason-purse"],
+  "updatedAt": "2026-03-01",
+
+  "themes": [
+    {
+      "id": "editorial",
+      "name": "Editorial",
+      "type": "theme",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "themes/editorial",
+      "description": "文艺出版风 — Playfair Display + 奶油白",
+      "preview": "themes/editorial/preview.png"
+    },
+    {
+      "id": "minimal",
+      "name": "Minimal",
+      "type": "theme",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "themes/minimal",
+      "description": "极简苹果风 — 无衬线 + 大留白",
+      "preview": "themes/minimal/preview.png"
+    },
+    {
+      "id": "tech",
+      "name": "Tech",
+      "type": "theme",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "themes/tech",
+      "description": "极客终端风 — 暗色背景 + 绿色高亮",
+      "preview": "themes/tech/preview.png"
+    },
+    {
+      "id": "warm",
+      "name": "Warm",
+      "type": "theme",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "themes/warm",
+      "description": "温馨咖啡馆 — 暖色系 + 圆角",
+      "preview": "themes/warm/preview.png"
+    }
+  ],
+
+  "plugins": [
+    {
+      "id": "reading-progress",
+      "name": "阅读进度条",
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "plugins/reading-progress",
+      "description": "页面顶部显示文章阅读进度"
+    },
+    {
+      "id": "ai-summary",
+      "name": "AI 文章摘要",
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "plugins/ai-summary",
+      "description": "使用 MiniMax 自动生成文章摘要"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+/* =============================================
+   Minimal Zen — 极简禅意主题
+   灵感：Apple.com + Linear.app + Notion
+   ============================================= */
+
+:root {
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --muted: #a0a0a0;
+  --muted-foreground: #737373;
+  --border: #e5e5e5;
+  --card: #fafafa;
+  --card-foreground: #0a0a0a;
+  --primary: #0a0a0a;
+  --primary-foreground: #ffffff;
+  --secondary: #f5f5f5;
+  --secondary-foreground: #0a0a0a;
+  --accent: #0066ff;
+  --accent-foreground: #ffffff;
+  --font-heading: -apple-system, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: -apple-system, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', monospace;
+  --radius: 10px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: -0.011em;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); }
+h3 { font-size: clamp(1.25rem, 2vw, 1.75rem); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; opacity: 1; }
+
+/* 极简分割线 */
+hr { border: none; height: 1px; background: var(--border); margin: 3rem 0; }
+
+/* 代码块：轻色背景 */
+.prose pre {
+  background: #f6f8fa !important;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: #24292f;
+}
+.prose pre code { color: #24292f; }
+.prose code {
+  background: #f0f0f0;
+  color: #e83e8c;
+  border-radius: 4px;
+  padding: 0.15em 0.4em;
+  font-size: 0.88em;
+}
+
+/* 卡片：极简阴影 */
+.card, [class*="card"] {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* blockquote */
+.prose blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.5em;
+  color: var(--muted-foreground);
+  font-style: normal;
+  font-size: 1.1em;
+}
