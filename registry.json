@@ -1,8 +1,9 @@
 {
   "version": "1.0",
-  "maintainers": ["Jason-purse"],
+  "maintainers": [
+    "Jason-purse"
+  ],
   "updatedAt": "2026-03-01",
-
   "themes": [
     {
       "id": "editorial",
@@ -45,7 +46,6 @@
       "preview": "themes/warm/preview.png"
     }
   ],
-
   "plugins": [
     {
       "id": "reading-progress",
@@ -54,7 +54,12 @@
       "verified": true,
       "version": "1.0.0",
       "source": "plugins/reading-progress",
-      "description": "页面顶部显示文章阅读进度"
+      "description": "页面顶部显示文章阅读进度",
+      "revalidation": {
+        "mode": "debounced",
+        "debounceSeconds": 120,
+        "description": "CSS 变化，2分钟内可反复调整"
+      }
     },
     {
       "id": "ai-summary",
@@ -63,7 +68,26 @@
       "verified": true,
       "version": "1.0.0",
       "source": "plugins/ai-summary",
-      "description": "使用 MiniMax 自动生成文章摘要"
+      "description": "使用 MiniMax 自动生成文章摘要",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0,
+        "description": "内容渲染相关，立即重建"
+      }
+    },
+    {
+      "id": "giscus-comments",
+      "name": "Giscus 评论",
+      "type": "plugin",
+      "verified": true,
+      "version": "1.0.0",
+      "source": "plugins/giscus-comments",
+      "description": "基于 GitHub Discussions 的评论系统",
+      "revalidation": {
+        "mode": "immediate",
+        "debounceSeconds": 0,
+        "description": "内容渲染相关，立即重建"
+      }
     }
   ]
 }
