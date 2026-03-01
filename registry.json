@@ -18,9 +18,9 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 512,
-      "source": "themes/editorial",
+      "source": "plugins/theme/theme-editorial",
       "description": "文艺出版风 — Playfair Display + 奶油白底色，适合长文阅读",
-      "preview": "themes/editorial/preview.png",
+      "preview": "plugins/theme/theme-editorial/preview.png",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -39,9 +39,9 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 389,
-      "source": "themes/minimal",
+      "source": "plugins/theme/theme-minimal",
       "description": "极简苹果风 — 无衬线字体 + 大留白，专注内容本身",
-      "preview": "themes/minimal/preview.png",
+      "preview": "plugins/theme/theme-minimal/preview.png",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -60,9 +60,9 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 276,
-      "source": "themes/tech",
+      "source": "plugins/theme/theme-tech",
       "description": "极客终端风 — 暗色背景 + 绿色高亮，写给技术读者",
-      "preview": "themes/tech/preview.png",
+      "preview": "plugins/theme/theme-tech/preview.png",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -81,9 +81,9 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 198,
-      "source": "themes/warm",
+      "source": "plugins/theme/theme-warm",
       "description": "温馨咖啡馆 — 暖色系 + 圆角卡片，营造舒适阅读氛围",
-      "preview": "themes/warm/preview.png",
+      "preview": "plugins/theme/theme-warm/preview.png",
       "revalidation": {
         "mode": "immediate",
         "debounceSeconds": 0
@@ -102,7 +102,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 256,
-      "source": "plugins/ai-summary",
+      "source": "plugins/content/ai-summary",
       "description": "使用 MiniMax 自动生成文章摘要，展示在文章顶部",
       "revalidation": {
         "mode": "immediate",
@@ -122,7 +122,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 189,
-      "source": "plugins/toc",
+      "source": "plugins/content/toc",
       "description": "自动提取文章标题生成侧边栏目录，支持高亮当前章节",
       "revalidation": {
         "mode": "immediate",
@@ -142,7 +142,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 142,
-      "source": "plugins/code-highlight",
+      "source": "plugins/content/code-highlight",
       "description": "基于 Prism.js 的代码块高亮，支持行号和复制按钮",
       "revalidation": {
         "mode": "debounced",
@@ -162,7 +162,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 98,
-      "source": "plugins/reading-time",
+      "source": "plugins/content/reading-time",
       "description": "自动计算并展示文章预计阅读时间",
       "revalidation": {
         "mode": "immediate",
@@ -182,7 +182,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 312,
-      "source": "plugins/reading-progress",
+      "source": "plugins/ui/reading-progress",
       "description": "页面顶部显示文章阅读进度条",
       "revalidation": {
         "mode": "debounced",
@@ -202,7 +202,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 87,
-      "source": "plugins/back-to-top",
+      "source": "plugins/ui/back-to-top",
       "description": "文章页右下角悬浮回到顶部按钮",
       "revalidation": {
         "mode": "debounced",
@@ -222,7 +222,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 201,
-      "source": "plugins/dark-mode",
+      "source": "plugins/ui/dark-mode",
       "description": "一键切换暗黑/浅色模式，记忆用户偏好",
       "revalidation": {
         "mode": "debounced",
@@ -242,7 +242,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 178,
-      "source": "plugins/giscus-comments",
+      "source": "plugins/social/giscus-comments",
       "description": "基于 GitHub Discussions 的评论系统，零服务器",
       "revalidation": {
         "mode": "immediate",
@@ -262,7 +262,7 @@
       "version": "0.9.0",
       "author": "community",
       "downloads": 54,
-      "source": "plugins/share-buttons",
+      "source": "plugins/social/share-buttons",
       "description": "文章底部添加微博、Twitter、微信分享按钮",
       "revalidation": {
         "mode": "debounced",
@@ -282,7 +282,7 @@
       "version": "0.8.0",
       "author": "community",
       "downloads": 41,
-      "source": "plugins/like-button",
+      "source": "plugins/social/like-button",
       "description": "文章一键点赞，计数存储于 GitHub Issues",
       "revalidation": {
         "mode": "immediate",
@@ -302,7 +302,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 134,
-      "source": "plugins/view-count",
+      "source": "plugins/analytics/view-count",
       "description": "统计并展示每篇文章的阅读量",
       "revalidation": {
         "mode": "immediate",
@@ -322,7 +322,7 @@
       "version": "0.7.0",
       "author": "community",
       "downloads": 23,
-      "source": "plugins/search-analytics",
+      "source": "plugins/analytics/search-analytics",
       "description": "记录访客搜索关键词，帮助了解读者需求",
       "revalidation": {
         "mode": "debounced",
@@ -342,7 +342,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 89,
-      "source": "plugins/structured-data",
+      "source": "plugins/seo/structured-data",
       "description": "自动注入 JSON-LD 结构化数据，提升搜索引擎收录",
       "revalidation": {
         "mode": "immediate",
@@ -362,7 +362,7 @@
       "version": "1.0.0",
       "author": "Jason-purse",
       "downloads": 76,
-      "source": "plugins/sitemap-gen",
+      "source": "plugins/seo/sitemap-gen",
       "description": "自动生成和更新 sitemap.xml，加速搜索引擎抓取",
       "revalidation": {
         "mode": "debounced",
